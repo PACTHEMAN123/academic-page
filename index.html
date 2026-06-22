@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Jiayu Xiao</title>
+    <meta name="author" content="Jiayu Xiao">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jiayu Xiao is an undergraduate researcher at Harbin Institute of Technology, Shenzhen, working on AI infrastructure, scalable MoE inference, and operating systems.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pactheman123.github.io/academic-page/">
+    <meta property="og:title" content="Jiayu Xiao — Academic Homepage">
+    <meta property="og:description" content="Undergraduate researcher working on AI infrastructure, scalable MoE inference, and operating systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pactheman123.github.io/academic-page/">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jiayu Xiao",
+        "alternateName": "Xiaojiayu",
+        "email": "mailto:xiaoy6047@gmail.com",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Harbin Institute of Technology, Shenzhen"
+        },
+        "jobTitle": "Undergraduate Researcher",
+        "sameAs": [
+          "https://github.com/PACTHEMAN123",
+          "https://www.zhihu.com/people/xiaopac",
+          "https://arxiv.org/abs/2512.13525"
+        ]
+      }
+    </script>
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px"><td style="padding:0px">
+        <section class="profile-intro">
+          <div class="profile-bio">
+              <p class="name" style="text-align: center;">Jiayu Xiao</p>
+              <p>
+                I am a third-year undergraduate student at <a href="https://www.hitsz.edu.cn/">Harbin Institute of Technology, Shenzhen</a>.
+                I am currently an intern at <a href="https://www.alibabagroup.com/">Alibaba Group</a>, advised by Zhi Zhang, working on AI infrastructure.
+              </p>
+              <p>
+                Previously, I was a research assistant at the <a href="https://www.cuhk.edu.cn/">Chinese University of Hong Kong, Shenzhen</a>, advised by <a href="https://mincyu.github.io/">Minchen Yu</a>.
+                I am interested in systems for machine learning, efficient inference, and the low-level details that make large-scale AI systems work.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:xiaoy6047@gmail.com">Email</a> &nbsp;/&nbsp;
+                <a href="#selected-work">Projects</a> &nbsp;/&nbsp;
+                <a href="#writing">Writing</a> &nbsp;/&nbsp;
+                <a href="https://github.com/PACTHEMAN123">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://www.zhihu.com/people/xiaopac">Zhihu</a>
+              </p>
+          </div>
+          <div class="profile-photo">
+            <a href="images/selfie.jpg"><img alt="Portrait of Jiayu Xiao" src="images/selfie.jpg" class="hoverZoomLink"></a>
+          </div>
+        </section>
+
+        <table class="about-section" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr><td style="padding:16px;width:100%;vertical-align:middle">
+            <h2>About</h2>
+            <p>
+              I'm drawn to systems where algorithms meet hardware, and to the constraints that decide whether an idea survives contact with a real machine. The solutions I admire are the ones that cut to the actual problem — through decoupling, or through reframing, rather than through force. I'd like to help shape what AI becomes, not just watch it happen.
+            </p>
+          </td></tr>
+        </tbody></table>
+
+        <section id="selected-work" class="selected-work">
+          <h2>Selected Work</h2>
+
+          <article class="project-card">
+            <div class="project-image project-image-janus">
+              <img src="images/Janus.png" alt="JANUS system overview">
+            </div>
+            <div class="project-details">
+              <a href="https://arxiv.org/abs/2512.13525"><span class="papertitle">Janus: Disaggregating Attention and Experts for Scalable MoE Inference</span></a>
+              <p class="project-authors">Zhexiang Zhang, Ye Wang, Yumiao Zhao, <strong>Jiayu Xiao</strong>, Qianjing Yang, et al.</p>
+              <p class="project-links"><em>Submitted to NSDI 2027</em> &nbsp;/&nbsp; <a href="https://arxiv.org/abs/2512.13525">arXiv</a> &nbsp;/&nbsp; <a href="https://arxiv.org/pdf/2512.13525">PDF</a></p>
+              <p>JANUS disaggregates attention and MoE layers into independently provisioned GPU worker pools, couples them with adaptive two-phase communication, and uses microsecond-scale activation scheduling plus SLO-aware scaling. It improves per-GPU throughput by up to 4.7× while meeting token-level latency SLOs.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/chronix-arch.svg" alt="Chronix kernel architecture">
+            </div>
+            <div class="project-details">
+              <a href="https://github.com/PACTHEMAN123/Chronix"><span class="papertitle">Chronix: A Multicore Monolithic Operating System</span></a>
+              <p class="project-award">First Prize, Computer System Development Capability Competition</p>
+              <p class="project-authors">OS Kernel Implementation Track &nbsp;/&nbsp; Team Lead</p>
+              <p class="project-links"><em>August 2025</em> &nbsp;/&nbsp; <a href="https://github.com/PACTHEMAN123/Chronix">Code</a></p>
+              <p>Chronix is a Rust multicore monolithic kernel for RISC-V 64 and LoongArch 64. Its key features include asynchronous stackless coroutines with multicore load balancing; demand loading, copy-on-write, lazy allocation, and a SLAB allocator; and a Linux-like VFS with dentry/page caches supporting Ext4, FAT32, tmpfs, procfs, and devfs. It also provides POSIX-style signals, PCI/MMIO drivers, and IPv4/IPv6 TCP/UDP networking. I led the team and worked on the file system, signal mechanism, and project build tooling.</p>
+            </div>
+          </article>
+        </section>
+
+        <table id="writing" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr><td style="padding:16px;width:100%;vertical-align:middle">
+            <h2>Writing</h2>
+            <p>
+              On <a href="https://www.zhihu.com/people/xiaopac">Zhihu</a>, I write in Chinese about technical topics, my growth as an engineer / student / researcher, and ideas I am thinking through.
+            </p>
+            <p class="writing-meta">Zhihu &nbsp;·&nbsp; 800+ followers &nbsp;·&nbsp; 2K likes &nbsp;·&nbsp; 4K saves</p>
+          </td></tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr><td style="padding:0px"><br><p style="text-align:right;font-size:small;">Website template by <a href="https://jonbarron.info">Jon Barron</a>.</p></td></tr>
+        </tbody></table>
+      </td></tr>
+    </tbody></table>
+  </body>
+</html>
