@@ -84,6 +84,10 @@ a {
   font-size: 14px;
 }
 
+p a {
+  font-size: inherit;
+}
+
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
@@ -107,6 +111,148 @@ h2 {
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
+}
+
+.profile-intro {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding: 28px 20px 20px;
+}
+
+.profile-bio {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.profile-bio p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.profile-bio .name {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.profile-photo {
+  flex: 0 0 250px;
+}
+
+.profile-photo img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center 70%;
+  border-radius: 50%;
+}
+
+.about-section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#writing p:not(.writing-meta) {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.selected-work {
+  padding: 28px 16px 20px;
+}
+
+.selected-work > h2 {
+  margin-bottom: 20px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 34%) minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  padding: 24px 0;
+  border-top: 1px solid #e4e4e4;
+}
+
+.project-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  padding: 12px;
+  background: #fafafa;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-image-janus {
+  background: #f4f4f4;
+}
+
+.project-details .papertitle {
+  font-size: 19px;
+  line-height: 1.25;
+}
+
+.project-details p {
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 10px 0 0;
+}
+
+.project-details .project-authors,
+.project-details .project-links {
+  margin-top: 8px;
+  color: #666;
+}
+
+.project-details .project-award {
+  margin-top: 10px;
+  color: #bd6c00;
+  font-weight: 700;
+}
+
+.writing-meta {
+  color: #777;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 640px) {
+  .selected-work {
+    padding: 26px 16px 18px;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .project-image {
+    height: 240px;
+  }
+}
+
+@media (max-width: 640px) {
+  .profile-intro {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 30px 16px 18px;
+  }
+
+  .profile-photo,
+  .profile-photo img {
+    width: 210px;
+    height: 210px;
+    flex-basis: 210px;
+  }
+
 }
 
 .one {

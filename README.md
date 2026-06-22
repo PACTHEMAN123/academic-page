@@ -1,1 +1,5 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+# Jiayu Xiao — Academic Homepage
+
+Source for Jiayu Xiao's academic homepage, built from the public [Jon Barron academic website template](https://github.com/jonbarron/website).
+
+The site is published with GitHub Pages at `https://pactheman123.github.io/academic-page/`.

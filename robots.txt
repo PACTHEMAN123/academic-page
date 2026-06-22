@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pactheman123.github.io/academic-page/sitemap.xml
