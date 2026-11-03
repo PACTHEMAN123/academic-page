@@ -77,6 +77,15 @@
         <section id="selected-work" class="selected-work">
           <h2>Selected Work</h2>
 
+          <article class="project-card project-card-text" id="shardfly">
+            <div class="project-details">
+              <a href="https://arxiv.org/abs/2611.00646"><span class="papertitle">When Shards Fly: Cross-Tensor In-Flight Conversion for Low-Latency, Low-Memory Weight Updates in Disaggregated RL</span></a>
+              <p class="project-authors"><strong>Jiayu Xiao</strong>, Ye Wang, Zhi Zhang, Jiarui Guo, Kan Liu, Tao Lan, Minchen Yu</p>
+              <p class="project-links"><em>arXiv preprint, 2026</em> &nbsp;/&nbsp; <a href="https://arxiv.org/abs/2611.00646">arXiv</a> &nbsp;/&nbsp; <a href="https://arxiv.org/pdf/2611.00646">PDF</a></p>
+              <p>ShardFly speeds up policy weight synchronization between training and rollout GPUs in disaggregated LLM reinforcement learning. It reuses cross-tensor transfer plans and fuses layout conversion, quantization, communication, and destination writes in a persistent GPU kernel. Across five models and four baselines on up to 32 H20 GPUs, BF16 weight updates ran 1.26–27.92× faster. End-to-end Qwen3-30B-A3B GRPO response-token throughput rose 5.49–6.71% over veRL NCCL.</p>
+            </div>
+          </article>
+
           <article class="project-card">
             <div class="project-image project-image-janus">
               <img src="images/Janus.png" alt="JANUS system overview">
