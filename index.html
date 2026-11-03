@@ -77,7 +77,10 @@
         <section id="selected-work" class="selected-work">
           <h2>Selected Work</h2>
 
-          <article class="project-card project-card-text" id="shardfly">
+          <article class="project-card" id="shardfly">
+            <div class="project-image">
+              <img src="images/shardfly-arch.svg" alt="ShardFly system architecture showing the Planner and Executor">
+            </div>
             <div class="project-details">
               <a href="https://arxiv.org/abs/2611.00646"><span class="papertitle">When Shards Fly: Cross-Tensor In-Flight Conversion for Low-Latency, Low-Memory Weight Updates in Disaggregated RL</span></a>
               <p class="project-authors"><strong>Jiayu Xiao</strong>, Ye Wang, Zhi Zhang, Jiarui Guo, Kan Liu, Tao Lan, Minchen Yu</p>
@@ -93,7 +96,7 @@
             <div class="project-details">
               <a href="https://arxiv.org/abs/2512.13525"><span class="papertitle">Janus: Disaggregating Attention and Experts for Scalable MoE Inference</span></a>
               <p class="project-authors">Zhexiang Zhang, Ye Wang, Yumiao Zhao, <strong>Jiayu Xiao</strong>, Qianjing Yang, et al.</p>
-              <p class="project-links"><em>Submitted to NSDI 2027</em> &nbsp;/&nbsp; <a href="https://arxiv.org/abs/2512.13525">arXiv</a> &nbsp;/&nbsp; <a href="https://arxiv.org/pdf/2512.13525">PDF</a></p>
+              <p class="project-links"><em>arXiv preprint, 2025</em> &nbsp;/&nbsp; <a href="https://arxiv.org/abs/2512.13525">arXiv</a> &nbsp;/&nbsp; <a href="https://arxiv.org/pdf/2512.13525">PDF</a></p>
               <p>JANUS disaggregates attention and MoE layers into independently provisioned GPU worker pools, couples them with adaptive two-phase communication, and uses microsecond-scale activation scheduling plus SLO-aware scaling. It improves per-GPU throughput by up to 4.7× while meeting token-level latency SLOs.</p>
             </div>
           </article>
